@@ -1,0 +1,110 @@
+/* src/styles/Form.css */
+
+/* Body background */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #a5b4fc, #facc15); /* gradient */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s ease;
+  }
+  
+  /* On hover anywhere, slightly shift gradient */
+  body:hover {
+    background: linear-gradient(135deg, #abc1d3, #fbbf24);
+  }
+  
+  /* Form container */
+  .form-container {
+    /* max-width: 400px; */
+    width: 100%;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: rgba(157, 201, 214, 0.95); /* semi-transparent card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease;
+  }
+  
+  .form-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: rgb(147, 213, 222); /* slightly brighter on hover */
+  }
+  
+  /* Heading */
+  .form-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #111827;
+    text-align: center;
+  }
+  
+  /* Input fields */
+  .form-container input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .form-container input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+    outline: none;
+    background-color: #f0f4ff;
+  }
+  
+  /* Submit button */
+  .form-container button {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background-color: #6366f1;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .form-container button:hover {
+    background-color: #4f46e5;
+    transform: scale(1.03);
+  }
+  
+  /* Message styling */
+  .form-container p {
+    margin-top: 1rem;
+    color: #ef4444;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 500px) {
+    .form-container {
+      margin: 2rem 1rem;
+      padding: 1.5rem;
+    }
+  
+    .form-container h2 {
+      font-size: 1.5rem;
+    }
+  
+    .form-container input,
+    .form-container button {
+      font-size: 0.95rem;
+      padding: 0.65rem 0.85rem;
+    }
+  }
+  
