@@ -7,8 +7,7 @@ const app = express();
 // ===== Middleware =====
 app.use(express.json());
 app.use(cookieParser());
-const allowedOrigins = [
-  "http://localhost:5173", // during local dev
+const allowedOrigins = [ 
   "https://mybooklibraryy.netlify.app/", // your deployed frontend
 ];
 app.use(cors({
