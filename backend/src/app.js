@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(cookieParser());
 const allowedOrigins = [ 
-  "https://mybooklibraryy.netlify.app/", // your deployed frontend
+  "https://startling-selkie-999e06.netlify.app/", // your deployed frontend
 ];
 app.use(cors({
   origin: allowedOrigins, // frontend origin
