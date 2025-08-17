@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cookieParser());
 const allowedOrigins = [
   "http://localhost:5173", // during local dev
-  "https://books-library-management-app-2.onrender.com/api", // your deployed frontend
+  "https://mybooklibraryy.netlify.app/", // your deployed frontend
 ];
 app.use(cors({
   origin: allowedOrigins, // frontend origin
