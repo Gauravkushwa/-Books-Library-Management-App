@@ -8,7 +8,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8282/api/books", { withCredentials: true })
+      .get("https://books-library-management-app-2.onrender.com/api/books", { withCredentials: true })
       .then((res) => setBooks(res.data))
       .catch((err) => console.log(err))
       .finally(() => setLoading(false));

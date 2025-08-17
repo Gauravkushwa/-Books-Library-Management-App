@@ -2,7 +2,7 @@ import axios from "axios";
 
 // Create an Axios instance
 const api = axios.create({
-  baseURL: "http://localhost:8282/api", // backend base URL
+  baseURL: "https://books-library-management-app-2.onrender.com/api", // backend base URL
   withCredentials: true,               // send cookies automatically
 });
 

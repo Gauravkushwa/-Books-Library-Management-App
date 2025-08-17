@@ -14,7 +14,7 @@ const MyBookCard = ({ myBook, fetchMyBooks }) => {
     try {
       setLoading(true);
       await axios.patch(
-        `http://localhost:8282/api/mybooks/${bookId._id}/status`,
+        `https://books-library-management-app-2.onrender.com/api/mybooks/${bookId._id}/status`,
         { status: newStatus },
         { withCredentials: true }
       );
@@ -31,7 +31,7 @@ const MyBookCard = ({ myBook, fetchMyBooks }) => {
     try {
       setLoading(true);
       await axios.patch(
-        `http://localhost:8282/api/mybooks/${bookId._id}/rating`,
+        `https://books-library-management-app-2.onrender.com/api/mybooks/${bookId._id}/rating`,
         { rating: newRating },
         { withCredentials: true }
       );
